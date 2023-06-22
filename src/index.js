@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './style.css';
 import DALLE from './dall-e.png';
+import Data from './data.xml';
+import Notes from './data.csv';
 
  function component() {
    const element = document.createElement('div');
@@ -12,12 +14,16 @@ import DALLE from './dall-e.png';
    
    const myIcon = new Image();
 
-  myIcon.src = DALLE;
+   myIcon.src = DALLE;
 
+   element.appendChild(myIcon);
 
-  element.appendChild(myIcon);
+   console.log(Data);
 
+   console.log(Notes);
+   
    return element;
+   
  }
 
  document.body.appendChild(component());
