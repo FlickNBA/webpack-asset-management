@@ -1,4 +1,18 @@
+@font-face {
+
+  font-family: 'Inter';
+
+  src: url('./Inter-Bold.woff2') format('woff2'),
+
+    url('./Inter-Bold.woff') format('woff');
+
+
+  font-style: normal;
+
+}
+
 .hello {
     color: red;
-      background: url('./dall-e.png');
+    font-family: 'Inter';
+    background: url('./dall-e.png');
 }
